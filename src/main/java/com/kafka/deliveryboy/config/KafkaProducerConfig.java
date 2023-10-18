@@ -10,9 +10,9 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaProducerConfig {
     @Bean
     public NewTopic newTopic(){
-        return TopicBuilder.name("location-update-topic")
-                .replicas(1)
-                .partitions(2)
+        return TopicBuilder.name("random-number-topic")
+                .replicas(0)
+                .partitions(0)
                 .build();
     }
 }

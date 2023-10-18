@@ -10,7 +10,7 @@ public class KafkaService {
     private KafkaTemplate<String,String> kafkaTemplate;
 
     public Boolean locationUpdate(String location){
-       kafkaTemplate.send("location-update-topic",location);
+       kafkaTemplate.send("random-number-topic",location);
        System.out.println("Message Produced .......");
         return true;
     }
